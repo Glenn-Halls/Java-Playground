@@ -1,40 +1,43 @@
 public class Main {
 
     public static void main(String[] args) {
-        boolean knowJava = true;
-        System.out.println("The value of knowJava is " + knowJava);
 
-        if (knowJava) {
-            System.out.println("I know Java!");
+        if (true || false) {
+            System.out.println("only one condition needs to be true");
         }
 
-        if (knowJava) System.out.println("I still know Java!!!");
+        if (true && false) {
+            System.out.println("this can never be true");
+        }
 
-        int myValue = 5;
-        System.out.println("My value = " + myValue);
+        int myMaxLimit = 20;
+        int myMinLimit = 5;
 
-        if (myValue == 5) System.out.println("True!!!");
+        int myValue = 19;
 
-        if (myValue < 5) {
-            System.out.println("this condition is true");
+        if (myValue < myMaxLimit && myValue > myMinLimit) {
+            System.out.println("the value " + myValue + " is between " + myMinLimit + " and " + myMaxLimit);
         } else {
-            System.out.println("this condition is false");
+            System.out.println("the value " + myValue + " is not between " + myMinLimit + " and " + myMaxLimit);
         }
 
-        if (myValue != 5) {
-            System.out.println("this condition is not true");
-        } else if (myValue > 5) {
-            System.out.println("this condition is not true");
+        int myMaxXLimit = 5;
+        int myMinXLimit = 1;
+        int myMaxYLimit = 3;
+        int myMinYLimit = 1;
+
+        int myXValue = 4;
+        int myYValue = 2;
+
+        if ((myXValue < myMaxXLimit && myXValue > myMinXLimit) && (myYValue < myMaxYLimit && myYValue > myMinYLimit)) {
+            System.out.println("hooray, x and y are within range!!");
         } else {
-            System.out.println("all conditions are false");
+            System.out.println("boo, one or both of the x and y values are outside the range");
         }
 
-        if (myValue > 1) {
-            System.out.println("myValue > 1 is true");
-
-            if (myValue <= 5) {
-                System.out.println("myValue <= 5 is true");
-            }
+        boolean myBoolean = false;
+        if (!myBoolean) {
+            System.out.println("NOT false is true");
         }
     }
 }
