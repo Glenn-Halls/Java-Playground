@@ -1,16 +1,40 @@
 public class Main {
 
     public static void main(String[] args) {
-        int myVariable = 5;
-        System.out.println("myVariable is equal to " + myVariable);
+        boolean knowJava = true;
+        System.out.println("The value of knowJava is " + knowJava);
 
-        String myString = Integer.toString(myVariable);
-        System.out.println("myString is equal to " + myString);
+        if (knowJava) {
+            System.out.println("I know Java!");
+        }
 
-        myString += 1;
-        System.out.println("myString is equal to " + myString);
+        if (knowJava) System.out.println("I still know Java!!!");
 
-        myVariable = Integer.parseInt(myString) + 1;
-        System.out.println("myVariable is equal to " + myVariable);
+        int myValue = 5;
+        System.out.println("My value = " + myValue);
+
+        if (myValue == 5) System.out.println("True!!!");
+
+        if (myValue < 5) {
+            System.out.println("this condition is true");
+        } else {
+            System.out.println("this condition is false");
+        }
+
+        if (myValue != 5) {
+            System.out.println("this condition is not true");
+        } else if (myValue > 5) {
+            System.out.println("this condition is not true");
+        } else {
+            System.out.println("all conditions are false");
+        }
+
+        if (myValue > 1) {
+            System.out.println("myValue > 1 is true");
+
+            if (myValue <= 5) {
+                System.out.println("myValue <= 5 is true");
+            }
+        }
     }
 }
