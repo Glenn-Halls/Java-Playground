@@ -1,12 +1,16 @@
-import com.test.sandbox;
-
-import static com.method.saved.helloWorld;
-
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
-        sandbox.myMethod();
-        helloWorld();
+        int myVariable = 5;
+        System.out.println("myVariable is equal to " + myVariable);
+
+        String myString = Integer.toString(myVariable);
+        System.out.println("myString is equal to " + myString);
+
+        myString += 1;
+        System.out.println("myString is equal to " + myString);
+
+        myVariable = Integer.parseInt(myString) + 1;
+        System.out.println("myVariable is equal to " + myVariable);
     }
 }
