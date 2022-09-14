@@ -1,6 +1,6 @@
 package com.test;
 
-public class Cat {
+public class Cat implements CanSpeak {
     public String petName;
     private int age;
 
