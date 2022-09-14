@@ -9,5 +9,7 @@ public class Main {
         pet.petName = "Henry";
 
         pet.speak();
+
+        System.out.println(pet.getAge());
     }
 }

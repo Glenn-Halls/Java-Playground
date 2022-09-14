@@ -2,6 +2,7 @@ package com.test;
 
 public class Cat {
     public String petName;
+    private int age;
 
     public Cat() {
         System.out.println("A new instance of Cat was created!");
@@ -11,4 +12,7 @@ public class Cat {
         System.out.println("Meeeeeooowwww!!  says " + petName);
     }
 
+    public int getAge() {
+        return age;
+    }
 }
