@@ -62,7 +62,7 @@ public class DaysInMonth {
                 numdays = 31;
                 break;
             default:
-                month = "UNKNOWN";
+                month = "INVALID MONTH";
                 numdays = 0;
         }
 
