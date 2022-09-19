@@ -4,21 +4,16 @@ public class Sandbox {
 
     public static void main(String[] args) {
 
-        int number;
-        int total = 0;
-        double average;
+        int num = 1;
+        int total = 1;
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        number = input.nextInt();
+        do {
+            total *= num;
+            System.out.println("Enter a number to multiply, or 0 to finish: ");
+            num = input.nextInt();
+        } while (num != 0);
 
-        for (int counter = 1; counter <= number; counter++) {
-            total += counter;
-            System.out.print(counter);
-        }
-
-        average = total / (double)number;
-
-        System.out.println("The total of the numbers from 1 to " + number +  " is " + total + " and the average is " + average);
+        System.out.println("The total is: " + total);
     }
 }
