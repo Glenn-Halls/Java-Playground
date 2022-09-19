@@ -4,16 +4,27 @@ public class Sandbox {
 
     public static void main(String[] args) {
 
-        int num = 1;
-        int total = 1;
+        int levels;
         Scanner input = new Scanner(System.in);
 
-        do {
-            total *= num;
-            System.out.println("Enter a number to multiply, or 0 to finish: ");
-            num = input.nextInt();
-        } while (num != 0);
+        System.out.print("How many levels should the tree have?: ");
+        levels = input.nextInt();
 
-        System.out.println("The total is: " + total);
+        System.out.println("\n\n\n");
+
+        for (int level = 0; level < levels; level++) {
+            String branch = "*";
+            String space = "";
+            for (int stars = 0; stars < level; stars++) {
+                branch += "**";
+                }
+            for (int spaces = level + 1; spaces < levels; spaces++) {
+                space += " ";
+            }
+            branch = space + branch;
+
+            System.out.println(branch);
+        }
+
     }
 }
