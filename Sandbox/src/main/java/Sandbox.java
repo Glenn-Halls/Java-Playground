@@ -15,12 +15,8 @@ public class Sandbox {
         for (int level = 0; level < levels; level++) {
             String branch = "*";
             String space = "";
-            for (int stars = 0; stars < level; stars++) {
-                branch += "**";
-                }
-            for (int spaces = level + 1; spaces < levels; spaces++) {
-                space += " ";
-            }
+            for (int stars = 0; stars < level; stars++) branch += "**";
+            for (int spaces = level + 1; spaces < levels; spaces++) space += " ";
             branch = space + branch;
 
             System.out.println(branch);
