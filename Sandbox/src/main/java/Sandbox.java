@@ -3,29 +3,24 @@ import java.util.Scanner;
 public class Sandbox {
 
     public static void main(String[] args) {
-        int n = 0;
-        while (n<10) {
-            System.out.println("counting... " + (n+1));
-            n++;
-        }
 
-        System.out.print("\nNow, it's your turn... enter a number here: ");
+        int number;
+        int counter = 0;
+        int total = 0;
+
         Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
-        System.out.println("okay then, I will sum all of the integers from 0 to " + num);
-        System.out.print("The sum of ");
 
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
 
-        int sum = 0;
+        do {
+            total += counter;
+            System.out.print(counter + ", ");
+            counter++;
+        } while (counter <= number);
 
-        int x = 0;
-        System.out.print(x);
-        while (x <= num) {
-            if (x > 0) System.out.print(" + " + x);
-            x++;
-            sum += x;
-        }
-        System.out.print(" = " + sum);
+        System.out.println("\nTotal = " + total);
+
 
     }
 
