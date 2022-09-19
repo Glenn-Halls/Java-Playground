@@ -1,0 +1,13 @@
+Program DoWhileCumulativeSum:
+    Start
+        Set number to 0
+        Set counter to 0
+        Set total to 0
+        Display "Enter a number"
+        Get number
+        Repeat
+            Let total = total + counter
+            Add 1 to counter
+        Until counter is greater than 0 and counter is equal to or greater than number
+        Display "The cumulative total of the first " + number + " numbers is " + total
+    End
