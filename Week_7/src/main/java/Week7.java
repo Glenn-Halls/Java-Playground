@@ -1,3 +1,4 @@
+import example.CitySearch;
 import example.RandomNumber;
 
 public class Week7 {
@@ -6,6 +7,7 @@ public class Week7 {
 
 //        ExamScores.run();
         RandomNumber.run();
+        CitySearch.run();
 
     }
 }
